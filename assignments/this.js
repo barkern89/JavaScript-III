@@ -36,7 +36,21 @@ const hobbit = {
 
 // Principle 3
 // code example for New Binding
+function Parent(parentAttributes){
+    this.newAge = parentAttributes.age;
+    this.newName = parentAttributes.name;
+    this.newLocation = parentAttributes.location;
+    this.newPhrase = parentAttributes.phrase;
+}
 
+const fred = new Parent({
+    age: 35,
+    name: "Fred",
+    location: "Bedrock",
+    phrase: "Yabba dabba do!"
+});
+
+console.log(fred);
 
 // Principle 4
 // code example for Explicit Binding
