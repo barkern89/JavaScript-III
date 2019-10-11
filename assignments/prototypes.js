@@ -156,4 +156,4 @@ Humanoid.prototype.greet = function(){
     Humanoid.call(this, heroAttributes)
   }
 
-  console.log(Hero)
+  console.log(this)

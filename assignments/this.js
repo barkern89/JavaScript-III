@@ -12,20 +12,23 @@ happening.
 * 3. Explicit Binding is for functions and explicitly tells the compiler which
 object to bind the `this` keyword to.
 
-* 4. 
+* 4. New binding: Using the `new` keyword when constructing an object gives us a `this` value for use with
+objects that are created using a Constructor Function. Anytime we use `this` inside of an object method, we are
+referencing the object from which that method was called.
 *
 * write out a code example of each explanation above
 */
 
 // Principle 1
 // code example for Window Binding
+//Don't ever do this (pun intended)
 console.log(this);
 
 // Principle 2
 // code example for Implicit Binding
 const hobbit = {
     name: "Samwise",
-    age: 32,
+    age: 102,
     food: "taters",
     cook: function() {
       return `${this.name} likes to cook ${this.food}.`
